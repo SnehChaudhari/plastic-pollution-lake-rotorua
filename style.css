@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');  /* importing cool heading font */
+
+body {
+  font-family: Arial, sans-serif;  /* generic font */
+  line-height: 1.6;  /* more line spacing */
+  background-color: #121212; /* darker background colour for unused background */
+  color: #e0e0e0; /* white text colour for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e1e1e; /* dark background colour for header */
+  text-align: center;  /* centers header */
+  border-bottom: 2px solid #4CAF50; /* green accent color for top of webpage */
+  padding: 24px 0;
+  background-image: url("images/lake_rotorua_banner.jpg");  /* adding background image/banner to the main heading */
+  background-position: center; /* centering the image */
+  background-size: cover; /* ensuring the image covers the entire header */
+  
+}
+
+header h1 {
+  font-size: 48px; /* larger font size for better readability */
+  font-family: 'Roboto Slab', serif;  /* cool heading font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);  /* dark font for better readability */
+  text-align: center; /* centers h1 */
+  color: #ffffff; /* white text colour to stand out from banner */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center; /* centers footer */
+  border-top: 2px solid #4CAF50; /* green accent color for bottom of webpage */
+  background-color: #333333; /* lighter grey for top of webpage */
+  color: #e0e0e0; /* white text colour for contrast */
+  padding: 24px 0;
+}
+
+
+/* NAVIGATION STYLES */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;   /* vertically center navigation links */
+  font-weight: bold;  /* bold text for better readability */
+  background-color: #333333;  /* lighter grey for bottom of webpage */
+}
+
+nav a {
+  color: #e0e0e0;  /* white text color normally */
+  padding: 15px 20px;
+  text-decoration: none;  /* removes underline from navigation links */
+  display: block;
+  font-size: 19px; /* increased font size for better readability */
+  text-align: center;  /* centers navigation links */
+  border-bottom: 3px solid #333333;  /* makes sure the border at the bottom of the navigation links is always there, so the webpage doesn't "jump" when navigation bar is hovered */
+}
+
+nav a:hover {
+  border-bottom: 3px solid #4CAF50;  /* green accent underline effect on hover */
+  color: #4CAF50;  /* navigation link color changes to green accent color on hover */
+}
+
+
+
+div {
+  padding: 32px;  /* gives padding to all sides */
+  max-width: 900px;  /* limiting the width of the div to 900px */
+  margin: 0 auto;  /* automatically centers webpage */
+  background-color: #1e1e1e;  /* dark background color for main content */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.image-credit {
+  font-family: 'Times New Roman', serif;  /* fancy font for image credit/references */
+  font-style: italic;  /* fancy font style */
+  margin-top: 0;  /* removing space between reference and image */
+}
+
+h2 {      
+  color: #4CAF50;  /* Green highlight for headings */
+  font-size: 32px;  /* larger font size for h2 headings */
+  margin-bottom: 16px;
+}
+
+a {         
+  color: #4CAF50;  /* Green highlight for link colour */
+  text-decoration: underline;
+}
