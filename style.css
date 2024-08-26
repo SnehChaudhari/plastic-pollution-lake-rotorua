@@ -33,7 +33,7 @@ header h1 {
 footer {
   text-align: center; /* centers footer */
   border-top: 2px solid #4CAF50; /* green accent color for bottom of webpage */
-  background-color: #333333; /* lighter grey for top of webpage */
+  background-color: #333333; /* lighter grey for bottom of webpage */
   color: #e0e0e0; /* white text colour for contrast */
   padding: 24px 0;
 }
@@ -45,7 +45,7 @@ nav {
   justify-content: center;
   align-items: center;   /* vertically center navigation links */
   font-weight: bold;  /* bold text for better readability */
-  background-color: #333333;  /* lighter grey for bottom of webpage */
+  background-color: #333333;  /* lighter grey for top of webpage */
 }
 
 nav a {
@@ -73,8 +73,10 @@ div {
 }
 
 img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* ensures image is full width of div */
+  height: auto; /* maintains aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);  /* adds a subtle shadow to the image */
+  border-radius: 8px;  /* rounds the corners of the image */
 }
 
 .image-credit {
@@ -92,4 +94,12 @@ h2 {
 a {         
   color: #4CAF50;  /* Green highlight for link colour */
   text-decoration: underline;
+}
+
+a:hover {
+  color: #66BB6A;  /* lighter green link colour on hover */
+}
+
+p {
+  font-size: 17px; /* slightly larger text for better readability */
 }
