@@ -10,6 +10,10 @@ body {
 }
 
 header {
+  display: flex; /* flexbox for header */
+  justify-content: center;  /* centers the header content */
+  align-items: center;  /* vertically centers the items */
+  position: relative;  /* Make header a relative container for absolute positioning */
   background-color: #1e1e1e; /* dark background colour for header */
   text-align: center;  /* centers header */
   border-bottom: 2px solid #4CAF50; /* green accent color for top of webpage */
@@ -17,7 +21,21 @@ header {
   background-image: url("images/lake_rotorua_banner.jpg");  /* adding background image/banner to the main heading */
   background-position: center; /* centering the image */
   background-size: cover; /* ensuring the image covers the entire header */
-  
+}
+
+.logo {
+  width: 40px;  /* adjusting logo size */
+  height: auto; /* maintains aspect ratio */
+  box-shadow: none; /* removing shadow from logo */
+}
+
+.logo-container {
+  position: absolute;
+  background: none;  /* removes background from logo div */
+  top: 1px;  /* adjusting logo position from top */
+  left: 1px;  /* adjusting logo position from left */
+  margin: 0;
+  padding: 0;
 }
 
 header h1 {
@@ -26,8 +44,8 @@ header h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);  /* dark font for better readability */
   text-align: center; /* centers h1 */
   color: #ffffff; /* white text colour to stand out from banner */
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0; /* resets all margins */
+  flex-grow: 1;
 }
 
 footer {
@@ -61,8 +79,8 @@ nav a {
 nav a:hover {
   border-bottom: 3px solid #4CAF50;  /* green accent underline effect on hover */
   color: #4CAF50;  /* navigation link color changes to green accent color on hover */
+  background-color: #575757; /* Slightly lighter grey for hover effect */
 }
-
 
 
 div {
@@ -83,6 +101,10 @@ img {
   font-family: 'Times New Roman', serif;  /* fancy font for image credit/references */
   font-style: italic;  /* fancy font style */
   margin-top: 0;  /* removing space between reference and image */
+}
+
+.nav-underline {
+  border-bottom: 3px solid #4CAF50;  /* green accent underline effect on hover */
 }
 
 h2 {      
